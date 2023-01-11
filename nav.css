@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+  }
+  
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    margin: 1%;
+    padding: 0 10px;
+  }
+  .row {
+    margin: 0 -5px;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  address{
+    width: 50%;
+    margin: 1%;
+  }
+  @media screen and (max-width: 600px) {
+    .address {
+        align-items: center;
+    }
+  }
+  footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #28bb48;
+    color: rgb(219, 209, 209);
+    }
+    @media screen and (max-width: 667px) {
+        .footer {
+          width: 100%;
+          margin: 5%;   
+        }
+        .parttext{
+            width: 100%;
+            
+        }
+      }
+    .parttext{
+        height: 100%;
+        width: auto;
+        font-style: normal;
+        margin-top: 0.8cm;
+        margin-right: 2cm;
+        margin-left: 1cm;
+    }
+    .set{
+        width: 100%;
+        text-align: center;
+        background-color: #28bb48;
+    }
